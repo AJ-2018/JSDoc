@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Documentation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
   </head>
   <body>
     <main id="main-doc" class="container">
@@ -12,7 +13,7 @@
         <header>
           <h2>Introduction</h2>
         </header>
-        <p>JavaScript is a programming language that adds interactivity to your website (for example games, responses when buttons are pressed or data is entered in forms, dynamic styling, animation). This brief documentation helps you get started with this exciting language and gives you an idea of what is possible.</p>
+        <p>JavaScript is a programming language that adds interactivity to your website (for example games, responses when buttons are pressed or data is entered in forms, dynamic styling and animation). This brief documentation helps you get started with this exciting language and gives you an idea of what is possible.</p>
       </section>
       <section class="main-section" id="What_you_should_already_know">
         <header>
@@ -20,8 +21,8 @@
         </header>
         <p>This guide assumes you have the following basic background:</p>
         <ul>
-          <li>A general understanding of the Internet and the World Wide Web (WWW)</li>
-          <li>Good working knowledge of HyperText Markup Language (HTML)</li>
+          <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+          <li>Good working knowledge of HyperText Markup Language (HTML).</li>
           <li>Some programming experience.</li>
         </ul>
       </section>
@@ -31,31 +32,101 @@
         </header>
         <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g. having complex animations, clickable buttons, popup menus etc.) There are also more advanced server side versions of JavaScript such as Node.Js which allows you to add more functionality to a website than simply downloading files (such as real-time collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
         <p>JavaScript contains a standard library of objects, such as <strong><em>Array</em></strong>, <strong><em>Date</em></strong>, <strong><em>Math</em></strong> and a core set of language elements such as operators, control structures and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects. For example:</p>
+        <ul>
+          <li><em>Client-side JavaScript</em> extends the core language by supplying objects to control a browser and it's Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input and page navigation.</li>
+          <li><em>Server-side JavaScript</em> extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+        </ul>
+        <p>This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
       </section>
       <section class="main-section" id="JavaScript_and_Java">
         <header>
           <h2>JavaScript and Java</h2>
         </header>
-      </section>
-      <section class="main-section" id="Hello_world">
-        <header>
-          <h2>Hello world</h2>
-        </header>
+        <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+        <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing Numeric, Boolean and String values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+        <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes and methods. You do not have to be concerned with whether methods are public, private or protected and you do not have to implement interfaces. Variables, parameters and function return types are not explicitly typed.</p>
+        <p>Java is a class-based programming language designed for fast execution and type safety. Type safety means, for instance, that you can't cast a Java integer into an object reference or access private memory by corrupting Java bytecodes. Java's class-based model means that programs consist exclusively of classes and their methods. Java's class inheritance and strong typing generally require tightly coupled object hierarchies. These requirements make Java programming more complex than JavaScript programming.</p>
       </section>
       <section class="main-section" id="Comments">
         <header>
           <h2>Comments</h2>
         </header>
+        <p>The syntax of <strong>comments</strong> is the same as in C++ and in many other languages:</p>
+        <figure>
+          <pre>
+            <code>
+              // a one line comment
+
+              /* this is a longer,
+               * multi-line comment
+               */
+
+              /* You can't, however, /* nest comments */ <strong style="color: #F00;">SyntaxError</strong> */
+            </code>
+          </pre>
+        </figure>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>
+          <h2>Hello world</h2>
+        </header>
+        <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code.</p>
+        <p>To open Scratchpad (<kbd>Shift</kbd> + <kbd>F4</kbd>), select "<strong>Scratchpad</strong>" from the "Developer" menu, which is under the menu in Firefox. It opens in a separate window and is an editor that you can use to write and execute JavaScript in the browser.</p>
+        <figure>
+          <figcaption style="padding: 1rem 0 0 1rem;">Code:</figcaption>
+          <pre>
+            <code>
+              function greetMe(yourName) {
+                alert('Hello ' + yourName);
+              }
+
+              greetMe('World');
+            </code>
+          </pre>
+        </figure>
       </section>
       <section class="main-section" id="Variables">
         <header>
           <h2>Variables</h2>
         </header>
+        <p>You use variables as symbolic names for values in your application. The names of variables, called <em><u>identifiers</u></em>, conform to certain rules.</p>
+        <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+        <p>Some examples of legal names are "Number_hits", "temp99", "$credit" and "_name".</p>
       </section>
       <section class="main-section" id="Declaring_variables">
         <header>
           <h2>Declaring variables</h2>
         </header>
+        <p>You can declare variable in three ways:</p>
+        <ul>
+          <li style="margin: 1.5rem 0 2.5rem 0;">
+            With the keyword <strong>var</strong>. For example:
+            <figure style="padding: 1rem; margin: 1rem 0;">
+              <code style="color: #000;">
+                var x = 42
+              </code>
+            </figure>
+            This syntax can be used to declare both local and global variables.
+          </li>
+          <li style="margin: 0 0 2.5rem 0;">
+            By simply assigning it a value. For example:
+            <figure style="padding: 1rem; margin: 1rem 0;">
+              <code style="color: #000;">
+                x  = 42
+              </code>
+            </figure>
+            If this form is used outside of function, it declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+          </li>
+          <li>
+            With the keyword <strong>let</strong>. For example:
+            <figure style="padding: 1rem; margin: 1rem 0;">
+              <code style="color: #000;">
+                let y = 13
+              </code>
+            </figure>
+            This syntax can be used to declare a block-scope local variable. See "Variable scope" in detail below.
+          </li>
+        </ul>
       </section>
       <section class="main-section" id="Variable_scope">
         <header>
