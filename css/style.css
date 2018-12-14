@@ -1,5 +1,69 @@
 /* Universal Styles */
 
+body{
+  background-image: url('../images/bg-texture3.jpg');
+}
+
 figure{
-  background-color: #eee; /* Lightest shade of whisper */
+  background-color: #e5e5e5; /* a shade of whisper */
+}
+
+/* Navbar */
+
+
+#navbar header{
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: #FFCC66;
+
+}
+
+#navbar header .nav-links{
+  padding-top: 3.6rem;
+}
+
+#navbar h1{
+  position: fixed;
+  color: #FFF;
+  background-color: #006699;
+  padding: 0 0.322rem 0.3rem 0.41rem;
+}
+
+@media only screen and (max-width: 1199px){
+  #navbar header{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    height: 25%;
+  }
+}
+
+
+#navbar p{
+  font-size: 1.375rem;
+  border-bottom: 1px solid #000;
+}
+
+#navbar p.last{
+  border: none;
+}
+
+#navbar a{
+  color: inherit;
+}
+
+
+/* Content section */
+
+.content{
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.main-section{
+  margin-bottom: 4rem;
+}
+
+.main-section h2{
+  color: #006699;
 }
