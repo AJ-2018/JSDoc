@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
   </head>
   <body>
+    <!-- tablet header -->
+    <div class="container-fluid">
+      <h1 class="tablet">JS Documentation</h1>
+    </div>
     <!-- Main container -->
     <div class="container">
       <div class="row">
+        <!-- Navigation section -->
         <nav class="col-md-12 col-lg-4" id="navbar">
           <header>
-            <h1>JS Documentation</h1>
+            <h2>JS Documentation</h2>
             <div class="nav-links">
               <p><a href="#Introduction" class="nav-link">Introduction</a></p>
               <p><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></p>
@@ -36,12 +41,14 @@
           </header>
         </nav>
         <main id="main-doc" class=" col-md-12 col-lg-8 offset-lg-4 content">
+          <!-- Introduction -->
           <section class="main-section" id="Introduction">
             <header>
               <h2>Introduction</h2>
             </header>
             <p>JavaScript is a programming language that adds interactivity to your website (for example games, responses when buttons are pressed or data is entered in forms, dynamic styling and animation). This brief documentation helps you get started with this exciting language and gives you an idea of what is possible.</p>
           </section>
+          <!-- What you should already know -->
           <section class="main-section" id="What_you_should_already_know">
             <header>
               <h2>What you should already know</h2>
@@ -53,6 +60,7 @@
               <li>Some programming experience.</li>
             </ul>
           </section>
+          <!-- What is JavaScript -->
           <section class="main-section" id="What_is_JavaScript?">
             <header>
               <h2>What is JavaScript?</h2>
@@ -65,6 +73,7 @@
             </ul>
             <p>This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.</p>
           </section>
+          <!-- JavaScript and Java -->
           <section class="main-section" id="JavaScript_and_Java">
             <header>
               <h2>JavaScript and Java</h2>
@@ -74,6 +83,7 @@
             <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes and methods. You do not have to be concerned with whether methods are public, private or protected and you do not have to implement interfaces. Variables, parameters and function return types are not explicitly typed.</p>
             <p>Java is a class-based programming language designed for fast execution and type safety. Type safety means, for instance, that you can't cast a Java integer into an object reference or access private memory by corrupting Java bytecodes. Java's class-based model means that programs consist exclusively of classes and their methods. Java's class inheritance and strong typing generally require tightly coupled object hierarchies. These requirements make Java programming more complex than JavaScript programming.</p>
           </section>
+          <!-- Comments -->
           <section class="main-section" id="Comments">
             <header>
               <h2>Comments</h2>
@@ -93,6 +103,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Hello world -->
           <section class="main-section" id="Hello_world">
             <header>
               <h2>Hello world</h2>
@@ -112,6 +123,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Variables -->
           <section class="main-section" id="Variables">
             <header>
               <h2>Variables</h2>
@@ -120,6 +132,7 @@
             <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
             <p>Some examples of legal names are "Number_hits", "temp99", "$credit" and "_name".</p>
           </section>
+          <!-- Declaring variables -->
           <section class="main-section" id="Declaring_variables">
             <header>
               <h2>Declaring variables</h2>
@@ -155,6 +168,7 @@
               </li>
             </ul>
           </section>
+          <!-- Variable scope -->
           <section class="main-section" id="Variable_scope">
             <header>
               <h2>Variable scope</h2>
@@ -184,6 +198,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Global variables -->
           <section class="main-section" id="Global_variables">
             <header>
               <h2>Global variables</h2>
@@ -191,6 +206,7 @@
             <p>Global variables are in fact properties of the <em>global object</em>. In web pages, the global object is <strong>window</strong>, so you can set and access global variables using the <strong><em>window.variable</em></strong> syntax.</p>
             <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called <strong>phoneNumber</strong> is declared in a document, you can refer to this variable from an iframe as <strong>parent.phoneNumber</strong>.</p>
           </section>
+          <!-- Constants -->
           <section class="main-section" id="Constants">
             <header>
               <h2>Constants</h2>
@@ -242,6 +258,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Data types -->
           <section class="main-section" id="Data_types">
             <header>
               <h2>Data types</h2>
@@ -262,6 +279,7 @@
               <li>and <em><u>Object</u></em>.</li>
             </ul>
           </section>
+          <!-- if...else statement -->
           <section class="main-section" id="if...else_statement">
             <header>
               <h2>if...else statement</h2>
@@ -330,6 +348,7 @@
               </pre>
             </figure>
           </section>
+          <!-- while statement -->
           <section class="main-section" id="while_statement">
             <header>
               <h2>while statement</h2>
@@ -377,6 +396,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Function declarations -->
           <section class="main-section" id="Function_declarations">
             <header>
               <h2>Function declarations</h2>
@@ -424,6 +444,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Function scope -->
           <section class="main-section" id="Function_scope">
             <header>
               <h2>Function scope</h2>
@@ -461,6 +482,7 @@
               </pre>
             </figure>
           </section>
+          <!-- Reference -->
           <section class="main-section" id="Reference">
             <header>
               <h2>Reference</h2>
